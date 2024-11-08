@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator - By Dua Ali Khan</title>
+</head>
+<body>
+    <div class="calculator">
+        <!-- Display / Output Box -->
+        <input type="text" placeholder="0" id="inputBox" disabled>
+        
+        <!-- Buttons Layout -->
+        <div class="buttons">
+            <button class="operator" onclick="clearScreen()">AC</button>
+            <button class="operator" onclick="deleteLast()">DEL</button>
+            <button class="operator" onclick="appendToInput('%')">%</button>
+            <button class="operator" onclick="appendToInput('/')">/</button>
+
+            <button onclick="appendToInput('7')">7</button>
+            <button onclick="appendToInput('8')">8</button>
+            <button onclick="appendToInput('9')">9</button>
+            <button class="operator" onclick="appendToInput('*')">*</button>
+
+            <button onclick="appendToInput('4')">4</button>
+            <button onclick="appendToInput('5')">5</button>
+            <button onclick="appendToInput('6')">6</button>
+            <button class="operator" onclick="appendToInput('-')">-</button>
+
+            <button onclick="appendToInput('1')">1</button>
+            <button onclick="appendToInput('2')">2</button>
+            <button onclick="appendToInput('3')">3</button>
+            <button class="operator" onclick="appendToInput('+')">+</button>
+
+            <button onclick="appendToInput('00')">00</button>
+            <button onclick="appendToInput('0')">0</button>
+            <button onclick="appendToInput('.')">.</button>
+            <button class="equalBtn" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
